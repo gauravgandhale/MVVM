@@ -102,15 +102,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		910D806D1F1F1FB500678597 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				916647F01F1B54A900224CAE /* Main.storyboard */,
+				916647F31F1B54A900224CAE /* Assets.xcassets */,
+				916647F51F1B54A900224CAE /* LaunchScreen.storyboard */,
+				916647F81F1B54A900224CAE /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		910D806E1F1F1FD000678597 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				916647EA1F1B54A900224CAE /* Products */,
+				784A22D70A6ADCA5B1F0C03C /* Pods */,
+				D405CAA90AD8F87D76E3F189 /* Frameworks */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		916647E01F1B54A900224CAE = {
 			isa = PBXGroup;
 			children = (
 				916647EB1F1B54A900224CAE /* MVVM */,
 				916648001F1B54A900224CAE /* MVVMTests */,
 				9166480B1F1B54A900224CAE /* MVVMUITests */,
-				916647EA1F1B54A900224CAE /* Products */,
-				784A22D70A6ADCA5B1F0C03C /* Pods */,
-				D405CAA90AD8F87D76E3F189 /* Frameworks */,
+				910D806E1F1F1FD000678597 /* Other */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,10 +148,7 @@
 			children = (
 				916647EC1F1B54A900224CAE /* AppDelegate.swift */,
 				916647EE1F1B54A900224CAE /* ViewController.swift */,
-				916647F01F1B54A900224CAE /* Main.storyboard */,
-				916647F31F1B54A900224CAE /* Assets.xcassets */,
-				916647F51F1B54A900224CAE /* LaunchScreen.storyboard */,
-				916647F81F1B54A900224CAE /* Info.plist */,
+				910D806D1F1F1FB500678597 /* Resources */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -700,6 +716,7 @@
 				916648131F1B54A900224CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		916648141F1B54A900224CAE /* Build configuration list for PBXNativeTarget "MVVMTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +725,7 @@
 				916648161F1B54A900224CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		916648171F1B54A900224CAE /* Build configuration list for PBXNativeTarget "MVVMUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +734,7 @@
 				916648191F1B54A900224CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
