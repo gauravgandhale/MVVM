@@ -6,6 +6,8 @@ target 'MVVM' do
   use_frameworks!
 
   # Pods for MVVM
+  pod 'ObjectMapper', '~> 2.2'
+
 
   target 'MVVMTests' do
     inherit! :search_paths
