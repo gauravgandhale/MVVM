@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>latest</key>
+	<dict>
+		<key>login</key>
+		<string>{host}/login</string>
+		<key>host</key>
+		<string>https://latest.com</string>
+	</dict>
+	<key>stage</key>
+	<dict>
+		<key>login</key>
+		<string>{host}/login</string>
+		<key>host</key>
+		<string>https://stage.com</string>
+	</dict>
+	<key>production</key>
+	<dict>
+		<key>login</key>
+		<string>{host}/login</string>
+		<key>host</key>
+		<string>https://production.com</string>
+	</dict>
+	<key>default</key>
+	<dict>
+		<key>login</key>
+		<string>{host}/login</string>
+		<key>host</key>
+		<string>https://default.com</string>
+	</dict>
+</dict>
+</plist>

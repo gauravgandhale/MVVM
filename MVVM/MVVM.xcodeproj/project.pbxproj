@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		26FF2B0784D74653EF2DF937 /* Pods_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2170406941BB711DC0A2BD9E /* Pods_MVVMUITests.framework */; };
 		290A876168D60C432DFF3E3A /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221AD04592FF68F3DBB900A3 /* Pods_MVVM.framework */; };
+		912D2E941F2080B1000A65E1 /* NSDictionary+Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D2E931F2080B1000A65E1 /* NSDictionary+Plist.swift */; };
+		912D2E981F20829C000A65E1 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D2E971F20829C000A65E1 /* Services.swift */; };
+		912D2E9A1F208C26000A65E1 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912D2E991F208C26000A65E1 /* Services.plist */; };
+		912D2E9C1F208D1D000A65E1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912D2E9B1F208D1D000A65E1 /* Environment.swift */; };
 		916647ED1F1B54A900224CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916647EC1F1B54A900224CAE /* AppDelegate.swift */; };
 		916647EF1F1B54A900224CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916647EE1F1B54A900224CAE /* ViewController.swift */; };
 		916647F21F1B54A900224CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916647F01F1B54A900224CAE /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		641964F97974EAEC0D0CB123 /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		6B73BAF8B7477C5091047BDB /* Pods_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		742806D9DD63C5776BDC42B0 /* Pods-MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTests/Pods-MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		912D2E931F2080B1000A65E1 /* NSDictionary+Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDictionary+Plist.swift"; path = "Core/Common Extension/NSDictionary+Plist.swift"; sourceTree = "<group>"; };
+		912D2E971F20829C000A65E1 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Services.swift; path = Networking/Environment/Services.swift; sourceTree = "<group>"; };
+		912D2E991F208C26000A65E1 /* Services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Services.plist; path = Resources/Plist/Services.plist; sourceTree = "<group>"; };
+		912D2E9B1F208D1D000A65E1 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = Networking/Environment/Environment.swift; sourceTree = "<group>"; };
 		916647E91F1B54A900224CAE /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		916647EC1F1B54A900224CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		916647EE1F1B54A900224CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 				916647F31F1B54A900224CAE /* Assets.xcassets */,
 				916647F51F1B54A900224CAE /* LaunchScreen.storyboard */,
 				916647F81F1B54A900224CAE /* Info.plist */,
+				912D2E991F208C26000A65E1 /* Services.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -121,6 +130,39 @@
 				D405CAA90AD8F87D76E3F189 /* Frameworks */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		912D2E911F208072000A65E1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				912D2E921F20807D000A65E1 /* Common Extensions */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		912D2E921F20807D000A65E1 /* Common Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				912D2E931F2080B1000A65E1 /* NSDictionary+Plist.swift */,
+			);
+			name = "Common Extensions";
+			sourceTree = "<group>";
+		};
+		912D2E951F208257000A65E1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				912D2E961F20826E000A65E1 /* Environment */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		912D2E961F20826E000A65E1 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				912D2E971F20829C000A65E1 /* Services.swift */,
+				912D2E9B1F208D1D000A65E1 /* Environment.swift */,
+			);
+			name = Environment;
 			sourceTree = "<group>";
 		};
 		916647E01F1B54A900224CAE = {
@@ -146,6 +188,8 @@
 		916647EB1F1B54A900224CAE /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				912D2E951F208257000A65E1 /* Networking */,
+				912D2E911F208072000A65E1 /* Core */,
 				916647EC1F1B54A900224CAE /* AppDelegate.swift */,
 				916647EE1F1B54A900224CAE /* ViewController.swift */,
 				910D806D1F1F1FB500678597 /* Resources */,
@@ -297,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912D2E9A1F208C26000A65E1 /* Services.plist in Resources */,
 				916647F71F1B54A900224CAE /* LaunchScreen.storyboard in Resources */,
 				916647F41F1B54A900224CAE /* Assets.xcassets in Resources */,
 				916647F21F1B54A900224CAE /* Main.storyboard in Resources */,
@@ -463,7 +508,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				916647EF1F1B54A900224CAE /* ViewController.swift in Sources */,
+				912D2E981F20829C000A65E1 /* Services.swift in Sources */,
+				912D2E941F2080B1000A65E1 /* NSDictionary+Plist.swift in Sources */,
 				916647ED1F1B54A900224CAE /* AppDelegate.swift in Sources */,
+				912D2E9C1F208D1D000A65E1 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
